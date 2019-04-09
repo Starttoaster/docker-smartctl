@@ -1,0 +1,11 @@
+version: '2'
+services:
+
+#S.M.A.R.T.
+  smartctl:
+    container_name: smart
+    image: starttoaster/smartctl:latest
+    privileged: true
+    restart: unless-stopped
+    volumes:
+      - logs:/logs
