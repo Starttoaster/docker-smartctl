@@ -3,11 +3,11 @@ Runs bash in a Docker container daily to output a log of S.M.A.R.T. data.
 
 # Easy setup instructions:
 
-Make a log file directory somewhere on your machine: `mkdir logs`
+Make a log file directory somewhere on your machine: `docker volume create logs`
 
 Run the container:
 
-`docker run -v /local/path/to/logs:/logs --privileged --name smart -d starttoaster/smartctl:latest`
+`docker run -v logs:/logs --privileged -d starttoaster/smartctl:latest`
 
 This container creates timestamped logfiles inside the mounted volume in the format of 'YYYYMMDD.log'
 
