@@ -1,7 +1,7 @@
 # docker-smartctl
 Runs bash in a Docker container daily to output a log of S.M.A.R.T. data.
 
-#Easy setup instructions:
+# Easy setup instructions:
 
 Make a log file directory somewhere on your machine: `mkdir logs`
 
