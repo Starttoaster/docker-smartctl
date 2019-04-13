@@ -14,4 +14,4 @@ Run the container:
 
 This container creates timestamped logfiles inside the mounted volume in the format of 'YYYYMMDD.log'
 
-**Note:** This container runs with the --privileged flag. As such, it should not be made publicly accessible. It is only privately accessible by default. This container is meant to be paired with a public app to display the files such as NGINX.
+**Note:** This container runs with the --privileged flag. As such, it should not be made publicly accessible. It is only privately accessible by default. This container is meant to be paired with a public app to display the files such as H5AI or Apaxy.
