@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #Starts self-test
 ls /dev/sd* | sed 's/[0-9]//g' | sort -u | while read -r line; do
