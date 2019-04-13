@@ -1,13 +1,10 @@
-FROM ubuntu:18.04
+FROM alpine:3.9.3
 LABEL maintainer="Brandon Butler bmbawb@gmail.com"
 
-RUN apt update && \
-    echo "1" | apt install smartmontools -y --no-install-recommends && \
-    apt-get clean && \
-    apt autoremove && \
-    rm -rf /var/lib/apt/lists/*   
+RUN apk update && \
+    echo "1" | apk add --no-cache smartmontools
 
 COPY scripts ./
 VOLUME /logs
 
-CMD /bin/bash /parent.sh
+CMD /bin/sh /parent.sh
