@@ -9,3 +9,6 @@ services:
     restart: unless-stopped
     volumes:
       - logs:/logs
+
+volumes:
+  logs:
