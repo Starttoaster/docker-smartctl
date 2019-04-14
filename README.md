@@ -25,4 +25,4 @@ Start up Apaxy container:
 `docker run -d -v ~/smart:/data -p 80:80 starttoaster/apaxyalps`
 
 Start up SMARTCTL container:
-`docker run -d -v ~/smart/webroot:/logs TZ="America/Chicago" --privileged starttoaster/smartctl`
+`docker run -d -v ~/smart/webroot:/logs -e TZ="America/Chicago" --privileged starttoaster/smartctl`
